@@ -1,0 +1,11 @@
+<h1>Welcome to our Shop!</h1>
+<h2>Select from our variety:</h2>
+<ul>
+<% @desserts.each do |dessert| %>
+	<li>
+	<a href="./dessert/<%= dessert["name"]%>">
+	<%= dessert["name"] %>
+	</a>
+	</li>
+<% end %>
+</ul>

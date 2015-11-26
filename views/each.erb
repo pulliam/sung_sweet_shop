@@ -1,0 +1,14 @@
+<ul>
+<% @desserts.each do |dessert| %>
+		<br>
+		<img src="<%= dessert["image_url"] %>">
+		<br>
+		<br>
+		<b><%= dessert["flavor"] %>
+		<%= dessert["name"] %></b>,
+		it's only <%= dessert["price"] %>,
+		It has <%= dessert["calories"] %> Calories and It
+		<%= dessert["has_gluten"] %> Gluten.
+		<br>
+<% end %>
+</ul>
